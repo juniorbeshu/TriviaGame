@@ -1,12 +1,14 @@
 body {
 	font-family: 'Sofia';font-size: 22px;
-    background-image: url("assets/images/crystal3.jpg");
+    
     background-color: black;
 
 }
 
 h1 {
 	text-align: center;
+	font-family: 'Sofia'; 
+	font-size: 30px;
 
 }
 
@@ -15,7 +17,8 @@ h1 {
 	width: 50%;
 	margin: 5% auto;
 	color: black;
-	background-color: gray; 
+	background-color: gray;
+	background-image: url("assets/images/friends.jpeg") 
 
 }
 
