@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Friends Trivia Game</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<header>
+		
+	</header>
+	<section class="container">
+
+		<header class="page-header">
+ 			<h1>Friends Trivia Game </h1>
+		</header>
+		<div class="game-div">
+        <p>Let's see how well you do with this friends tv show trivia. The qeustions are no too hard but challenging enough for people who think they knwo "Friends"</p>
+
+		<button class="startButton btn btn-primary">Start Game</button>
+		<div id="showCountDown"></div>
+		<h3 id="triviaQuestion">
+
+		</h3>
+		<div id="multipleChoice">
+			<div class="list-group choices">
+				<a id="a" class="list-group-item"></a>
+				<a id="b" class="list-group-item"></a>
+				<a id="c" class="list-group-item"></a>
+				<a id="d" class="list-group-item"></a>
+				<a id="e" class="list-group-item"></a>
+			</div>
+			<div class="panel panel-default results">
+				<div class="panel-heading">Your Trivia Results</div>
+				<div class="panel-body">
+					<ul class="list-group">
+	    				<li id="correct"></li>
+						<li id="wrong"></li>
+						<li id="unanswered"></li>
+					</ul>
+  				</div>
+				
+			</div>
+		</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+ 	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="assets/javascript/app.js"></script>
+</body>
+</html>

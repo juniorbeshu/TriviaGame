@@ -1,0 +1,44 @@
+body {
+	font-family: 'Sofia';font-size: 22px;
+    background-image: url("assets/images/crystal3.jpg");
+    background-color: black;
+
+}
+
+h1 {
+	text-align: center;
+
+}
+
+.game-div {
+	text-align: center;
+	width: 50%;
+	margin: 5% auto;
+	color: black;
+	background-color: gray; 
+
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	text-align: center;
+}
+
+
+#showCountDown {
+	height: 25px;
+	display: block;
+	text-align: center;
+}
+
+#triviaQuestion {
+	margin-bottom: 20px;
+}
+
+h3 {
+	text-align: center;
+	color: ;
+}
