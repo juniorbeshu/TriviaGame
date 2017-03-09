@@ -81,9 +81,7 @@ var trivia = {
 }
 		
 
-// Function to display results at the end of the game
-// ==================================================
-function results () {
+
 	
 	$('#triviaQuestion').hide();
 	$('.choices').hide();
@@ -100,13 +98,12 @@ function results () {
 
 }	
 
-// Function to start game
-// ==================================================
+
 function start() {
 
-	//Ask First Question
+	
 	askQuestion(questionCount);
-	//console.log(trivia.questions[questionCount].question);
+	
 
 	counter = setInterval(countDownToNextQuestion,1000);
 	
@@ -115,8 +112,7 @@ function start() {
 
 
 
-// Function to display questions
-// ==================================================
+
 function askQuestion(questionCount) {
 	countdown = 13;
 	$('#multipleChoice').show();
@@ -139,8 +135,7 @@ function askQuestion(questionCount) {
 }
 
 
-// Function to check of answer to question is correct
-// ==================================================
+
 function checkIfCorrect(guessed) {
 	if( guessed === trivia.questions[questionCount].answer) {
 		return true;
@@ -151,7 +146,7 @@ function checkIfCorrect(guessed) {
 	}
 }
 
-// Button Listener to start the game
+
 $('.startButton').on('click', function(){
 		$('.startButton').hide();
 		questionCount = 0, correctAnswers = 0, incorrectAnswers = 0, unanswered = 0, countdown = 13;
@@ -159,7 +154,7 @@ $('.startButton').on('click', function(){
 		start();
 });
 
-//Button listener to listen for answers
+
 $('.list-group-item').on('click', function(){
 
 	if (checkIfCorrect($(this).html()) === true) {
@@ -178,42 +173,41 @@ $('.list-group-item').on('click', function(){
 });
 
 
-// Function to time each question until next question
-// ==================================================
+
 function countDownToNextQuestion() {
 	countdown--;
 
-	// Show the countdown in the #show-countdown tag.
+	
     $('#showCountDown').html('<h4>Time Remaining: ' + countdown + ' seconds</h4>');
 
-    // Once countdown hits zero...
+    .
     if (countdown === 0){
 
-        // stop countdown.
+        
         clearInterval(counter);
 
-        // Alert the user that time is up.
+        
         unanswered++;
         console.log(" # of Unanswered: " + unanswered);
         console.log('Time Up!')
 
-        // Update question count
+       
         questionCount++;
 
-        // If all questions, have been asked, display results
+       
         if ( questionCount == 10 ) {
         	clearInterval(counter);
         	results();
         }
 
         else {
-	       	// go to next question
+	       
 	        askQuestion(questionCount);
 
-	        // Update counter
+	       
 	        countdown = 13;
 
-	        // Countdown to 0
+	       
 	        counter = setInterval(countDownToNextQuestion,1000);
         }
 
